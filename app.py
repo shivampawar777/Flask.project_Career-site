@@ -17,7 +17,6 @@ def jobs_page():
     return render_template('home.html', jobs=jobs)
 
 
-
 @app.route("/job/<id>")
 def jobdetails_page(id):
     job = show_jobdetails(id)
@@ -26,7 +25,6 @@ def jobdetails_page(id):
         return "Not Found", 404
   
     return render_template('jobpage.html', job=job)
-
 
 
 @app.route("/job/<id>/apply", methods=['post'])
@@ -38,12 +36,6 @@ def apply_page(id):
 
 
 
-
-
-if __name__ == '__main__':
-    app.run(host='localhost', debug=True)
-    
-    
-    
-
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', debug=True)
 
