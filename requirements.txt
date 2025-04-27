@@ -1,4 +1,5 @@
 Flask
-gunicorn
 sqlalchemy
 pymysql
+cryptography
+gunicorn
